@@ -1,0 +1,91 @@
+/* ControlPanel.css */
+
+.control-panel-wrapper {
+  margin-bottom: 32px;
+}
+
+.control-panel-header {
+  margin-bottom: 16px;
+}
+
+.control-panel-eyebrow {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--forest);
+  font-weight: 600;
+}
+
+.control-panel-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 6px 0 8px;
+  letter-spacing: -0.02em;
+}
+
+.control-panel-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  line-height: 1.65;
+}
+
+/* Form layout */
+.control-panel-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr auto;
+  gap: 20px;
+  align-items: end;
+  padding: 24px 28px;
+}
+
+.control-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.control-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.control-label-icon {
+  font-size: 0.85rem;
+}
+
+.control-submit {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.control-summary {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 900px) {
+  .control-panel-form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .control-submit {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .control-panel-form {
+    grid-template-columns: 1fr;
+  }
+}

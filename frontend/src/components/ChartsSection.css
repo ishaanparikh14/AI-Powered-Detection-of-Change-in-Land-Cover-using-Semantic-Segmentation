@@ -1,0 +1,37 @@
+/* ChartsSection.css */
+
+.charts-section { margin-bottom: 24px; animation: fadeIn 0.45s ease; }
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.chart-card {
+  padding: 18px 20px;
+  margin-bottom: 0;
+}
+
+.chart-card--wide {
+  grid-column: 1 / -1;
+}
+
+.chart-title {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* Recharts overrides */
+.recharts-tooltip-wrapper { z-index: 100; }
+.recharts-legend-item-text { color: var(--text-secondary) !important; }
+.recharts-default-legend { display: flex; flex-wrap: wrap; gap: 6px; }
+
+@media (max-width: 900px) {
+  .charts-grid { grid-template-columns: 1fr; }
+  .chart-card--wide { grid-column: auto; }
+}
