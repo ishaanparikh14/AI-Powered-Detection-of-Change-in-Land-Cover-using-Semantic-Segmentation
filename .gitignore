@@ -44,7 +44,7 @@ ENV/
 .env.*.local
 
 # ── Generated output (runtime artefacts) ──────
-reports/
+# reports/ is intentionally tracked — contains sample PDF outputs
 exports/
 
 # ── Node / React ───────────────────────────────
